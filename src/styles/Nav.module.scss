@@ -1,0 +1,18 @@
+@use 'base';
+
+.container {
+	position: absolute;
+	right: 0px;
+	padding: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: full;
+
+	a {
+		font-family: base.$redhat;
+		font-size: 1.25em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+}
