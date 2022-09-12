@@ -22,10 +22,22 @@
   margin: 0em;
   font-family: base.$akshar;
   font-size: 3em;
+
+  .fade {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+  }
 }
 
 .description {
   margin: 0em;
   font-family: base.$redhat;
   font-size: 2em;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0%}
+  90% { opacity: 85%}
+  100% { opacity: 100%}
+
 }

@@ -12,17 +12,22 @@ const Home: NextPage = () => {
           name="description"
           content="T-Rex Steel is one of Thailand's leading manufacturer of steel and grating products. We are a leader in the design and improvements of steel and grating products."
         />
-        <meta property="og:image" content="/factory.jpg" />
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
+          property="og:image"
+          content="https://thumbs2.imgbox.com/ef/01/qOBxIgMg_t.jpg"
+        />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1 className={styles.title}>TRUSTED EXPERIENCE</h1>
+          <h1 className={styles.title}>
+            TR
+            <span className={styles.fade}>USTED </span>
+            EX
+            <span className={styles.fade}>PERIENCE</span>
+          </h1>
           <p className={styles.description}>
             World-Class Steel, Building, and Manufacturing
           </p>

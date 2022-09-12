@@ -1,23 +1,11 @@
-import Link from "next/link";
-import styles from "../styles/Nav.module.scss";
+import { isMobile } from "react-device-detect";
+
+import BrowserNav from "./BrowserNav";
+import MobileNav from "./MobileNav";
 
 function NavBar() {
-  return (
-    <div className={styles.container}>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/">
-        <a>About</a>
-      </Link>
-      <Link href="/">
-        <a>Certificates</a>
-      </Link>
-      <Link href="/">
-        <a>Contacts</a>
-      </Link>
-    </div>
-  );
+  if (isMobile) return <MobileNav />;
+  else return <BrowserNav />;
 }
 
 export default NavBar;
