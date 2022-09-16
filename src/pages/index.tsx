@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+
 import styles from "../styles/Home.module.scss";
+import contents from "../styles/Contents.module.scss";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className="fullflex">
         <div className={styles.container}>
           <h1 className={styles.title}>
             TR
@@ -33,6 +35,25 @@ const Home: NextPage = () => {
           </p>
         </div>
       </main>
+
+      <article className="fullflex">
+        <div className={contents.container}>
+          <div>
+            <Image
+              src="https://thumbs2.imgbox.com/df/63/MX4FYZnw_t.jpg"
+              alt="Trexsteel's Factory"
+              width={800}
+              height={800}
+            />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint
+            quia aliquid nisi quos voluptatibus! Ea mollitia quam exercitationem
+            obcaecati at magni cumque doloremque, fuga tempora harum deserunt
+            vero ducimus.
+          </p>
+        </div>
+      </article>
     </>
   );
 };
