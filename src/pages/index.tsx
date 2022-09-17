@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
+import Footer from "../components/Footer";
+
 import styles from "../styles/Home.module.scss";
 import contents from "../styles/Contents.module.scss";
 
@@ -54,6 +56,27 @@ const Home: NextPage = () => {
           </p>
         </div>
       </article>
+
+      <article className="fullflex">
+        <div className={contents.container}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint
+            quia aliquid nisi quos voluptatibus! Ea mollitia quam exercitationem
+            obcaecati at magni cumque doloremque, fuga tempora harum deserunt
+            vero ducimus.
+          </p>
+          <div>
+            <Image
+              src="https://thumbs2.imgbox.com/9d/8c/NSS0axbh_t.jpg"
+              alt="Trexsteel's Example Work"
+              width={800}
+              height={800}
+            />
+          </div>
+        </div>
+      </article>
+
+      <Footer />
     </>
   );
 };
