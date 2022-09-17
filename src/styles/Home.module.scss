@@ -36,7 +36,23 @@
 
 .footer {
   width: 100%;
+  color: white;
   background-color: #18273C;
   height: 10rem;
+  display: flex;
+  flex-direction: row;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0%;
+
+    height: 100%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 }
