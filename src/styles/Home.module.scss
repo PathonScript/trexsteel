@@ -1,4 +1,5 @@
 @use 'base';
+$breakpoint-tablet: 768px;
 
 
 .container {
@@ -36,27 +37,35 @@
 
 .footer {
   width: 100%;
-  color: white;
   background-color: #18273C;
-  height: 10rem;
+  color: white;
+  height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   div {
-    h4 {
-      text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+
+    span {font-weight: bold}
+    p {
+      font-size: 1.2rem
     }
 
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 0%;
-
-    height: 100%;
-
-    div {
-      display: flex;
-      flex-direction: column;
+    a {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-top: 1rem
     }
   }
-
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
