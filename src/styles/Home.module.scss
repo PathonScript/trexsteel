@@ -43,6 +43,10 @@
   flex-direction: row;
 
   div {
+    h4 {
+      text-align: center;
+    }
+
     display: flex;
     flex-direction: row;
     flex: 1 1 0%;
