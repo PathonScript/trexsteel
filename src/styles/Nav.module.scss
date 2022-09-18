@@ -1,0 +1,15 @@
+@use 'base';
+
+.container {
+	position: absolute;
+	right: 0;
+	padding: 1rem;
+	color: white;
+	a { 
+		font-family: base.$redhat;
+		font-size: 1.75rem;
+		text-decoration: none;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}

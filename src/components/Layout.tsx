@@ -1,12 +1,27 @@
 import React from "react";
-import NavBar from "./NavBar";
+import BigBar from "./BigBar";
+import SmallBar from "./SmallBar";
+
+import useWindowDimensions from "./hooks/useWindowDimensions";
 
 function Layout({ children }: React.PropsWithChildren) {
-  return (
-    <>
-      <main>{children}</main>
-    </>
-  );
+  const { height, width } = useWindowDimensions();
+
+  if (width! > 768) {
+    return (
+      <>
+        <BigBar />
+        <main>{children}</main>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <SmallBar />
+        <main>{children}</main>
+      </>
+    );
+  }
 }
 
 export default Layout;

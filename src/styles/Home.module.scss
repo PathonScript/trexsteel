@@ -51,6 +51,11 @@ $breakpoint-tablet: 768px;
     flex-direction: column;
 
     span {font-weight: bold}
+    
+    h3 {
+      text-align: center;
+    }
+
     p {
       font-size: 1.2rem
     }
@@ -60,6 +65,7 @@ $breakpoint-tablet: 768px;
       font-weight: bold;
       margin-top: 1rem
     }
+
   }
 }
 
