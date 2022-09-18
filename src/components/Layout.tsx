@@ -1,6 +1,6 @@
 import React from "react";
 import BigBar from "./BigBar";
-import SmallBar from "./SmallBar";
+import DropDown from "./DropDown";
 
 import useWindowDimensions from "./hooks/useWindowDimensions";
 
@@ -17,7 +17,7 @@ function Layout({ children }: React.PropsWithChildren) {
   } else {
     return (
       <>
-        <SmallBar />
+        <DropDown>Hello World</DropDown>
         <main>{children}</main>
       </>
     );

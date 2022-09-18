@@ -5,7 +5,7 @@ import styles from "../styles/Nav.module.scss";
 
 function BigBar() {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -18,7 +18,7 @@ function BigBar() {
       <Link href="/">
         <a>Certificates</a>
       </Link>
-    </div>
+    </nav>
   );
 }
 
