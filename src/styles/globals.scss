@@ -1,4 +1,7 @@
+@use 'base';
+
 @import url('https://fonts.googleapis.com/css2?family=Akshar&family=Red+Hat+Display&display=swap');
+
 
 html,
 body {
@@ -10,6 +13,8 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
+  font-family: base.$redhat;
 }
 
 .fullflex {
@@ -22,3 +27,5 @@ a {
   height: 100vh;
 }
 
+
+  
