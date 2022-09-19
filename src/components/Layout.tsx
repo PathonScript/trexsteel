@@ -37,13 +37,22 @@ interface DropDown {
 function DropDownMenu() {
   function DropDownItem(props: DropDown) {
     return (
-      <Link href={props.link}>
-        <a>{props.children}</a>
-      </Link>
+      <div className="menu-item">
+        <Link href={props.link}>
+          <a className=".link-text">{props.children}</a>
+        </Link>
+      </div>
     );
   }
 
-  return <DropDownItem link="/">Home</DropDownItem>;
+  return (
+    <div className="dropdown">
+      <DropDownItem link="/">Home</DropDownItem>
+      <DropDownItem link="/">About</DropDownItem>
+      <DropDownItem link="/">Clients</DropDownItem>
+      <DropDownItem link="/">Certificates</DropDownItem>
+    </div>
+  );
 }
 
 export default Layout;
