@@ -1,9 +1,8 @@
 Todo
-- [ ] Dropdown navbar
-  - [ ] Bigger Button
-  - [ ] Drop down animation
-  - [ ] 
+- [x] Dropdown navbar
+  - [x] Bigger Button
+  - [x] Drop down animation
+- [ ] Style Footer font and font size
 - [ ] All Pages
   - [ ] Head, title, description, `og:image`, UTF-8
-- [ ] Style Footer font and font size
 - [ ] Video for Title
