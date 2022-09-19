@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 import BigBar from "./BigBar";
@@ -9,7 +10,6 @@ import mobile from "../styles/Mobile.module.scss";
 
 function Layout({ children }: React.PropsWithChildren) {
   const { height, width } = useWindowDimensions();
-
   if (width! > 768) {
     return (
       <>
@@ -34,7 +34,10 @@ interface DropDown {
   children: ReactNode;
 }
 
+// https://www.youtube.com/watch?v=IF6k0uZuypA
 function DropDownMenu() {
+  const [activeMenu, setActiveMenu] = useState("main");
+
   function DropDownItem(props: DropDown) {
     return (
       <div className="menu-item">
@@ -48,9 +51,9 @@ function DropDownMenu() {
   return (
     <div className="dropdown">
       <DropDownItem link="/">Home</DropDownItem>
-      <DropDownItem link="/">About</DropDownItem>
-      <DropDownItem link="/">Clients</DropDownItem>
-      <DropDownItem link="/">Certificates</DropDownItem>
+      <DropDownItem link="/about">About</DropDownItem>
+      <DropDownItem link="/clients">Clients</DropDownItem>
+      <DropDownItem link="/certificates">Certificates</DropDownItem>
     </div>
   );
 }

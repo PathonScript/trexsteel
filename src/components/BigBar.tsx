@@ -9,13 +9,13 @@ function BigBar() {
       <Link href="/">
         <a>Home</a>
       </Link>
-      <Link href="/">
+      <Link href="/about">
         <a>About us</a>
       </Link>
-      <Link href="/">
+      <Link href="/clients">
         <a>Clients</a>
       </Link>
-      <Link href="/">
+      <Link href="/certificates">
         <a>Certificates</a>
       </Link>
     </nav>
