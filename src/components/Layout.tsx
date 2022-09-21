@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { useState } from "react";
+import Head from "next/head";
 import Link from "next/link";
 
 import BigBar from "./BigBar";
@@ -13,6 +14,24 @@ function Layout({ children }: React.PropsWithChildren) {
   if (width! > 768) {
     return (
       <>
+        <Head>
+          <meta
+            name="description"
+            content="One of Thailand's top producers of steel and grating
+            goods is T-Rex Steel. In terms of steel and grating product design
+            and advancement, we are a leader. We are created to stringent
+            specifications using the most recent methods for fabricating and
+            designing high tensile structures. with more than 20 years of
+            expertise producing a variety of items"
+          />
+          <meta
+            property="og:image"
+            content="https://thumbs2.imgbox.com/ef/01/qOBxIgMg_t.jpg"
+          />
+
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <BigBar />
         <main>{children}</main>
       </>
