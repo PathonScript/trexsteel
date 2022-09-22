@@ -5,29 +5,17 @@ import Link from "next/link";
 
 import BigBar from "./BigBar";
 import DropDown from "./DropDown";
-import useWindowDimensions from "./hooks/useWindowDimensions";
-
-import mobile from "../styles/Mobile.module.scss";
 
 function Layout({ children }: React.PropsWithChildren) {
-  const { height, width } = useWindowDimensions();
-  if (width! > 768) {
-    return (
-      <>
-        <BigBar />
-        <main>{children}</main>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <DropDown>
-          <DropDownMenu />
-        </DropDown>
-        <main>{children}</main>
-      </>
-    );
-  }
+  return (
+    <>
+      <BigBar />
+      <DropDown>
+        <DropDownMenu />
+      </DropDown>
+      <main>{children}</main>
+    </>
+  );
 }
 
 interface DropDown {
