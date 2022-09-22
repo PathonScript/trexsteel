@@ -59,6 +59,20 @@ function About() {
           </div>
         </div>
       </main>
+
+      <div className="fullflex">
+        <h1>Our Vision</h1>
+        <p>
+          To be an international leader in the manufacturing by high
+          quality,continuous improvement and incorporating the lastest in design
+          and fabrication.
+        </p>
+        <h1>Mission</h1>
+        <p>
+          To conduct business with ethics,safety regulation in order to cover
+          customer delight.
+        </p>
+      </div>
     </>
   );
 }
