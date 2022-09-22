@@ -34,7 +34,7 @@ function About() {
             and advancement, we are a leader. We are created to stringent
             specifications using the most recent methods for fabricating and
             designing high tensile structures. with more than 20 years of
-            expertise producing a variety of items &quot;
+            expertise producing a variety of items&quot;
           </p>
         </div>
 
@@ -61,7 +61,7 @@ function About() {
       </main>
 
       <div className="fullflex">
-        <h1>Our Vision</h1>
+        <h1>Vision</h1>
         <p>
           To be an international leader in the manufacturing by high
           quality,continuous improvement and incorporating the lastest in design
@@ -69,7 +69,7 @@ function About() {
         </p>
         <h1>Mission</h1>
         <p>
-          To conduct business with ethics,safety regulation in order to cover
+          To conduct business with ethics, safety regulation in order to cover
           customer delight.
         </p>
       </div>
